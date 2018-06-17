@@ -16,12 +16,15 @@ My original purpose was for use in subsetting genome matrices which look like:
 
 ```
 chromosome	coordinate	sample1	sample2	sample3
+x	x	x	x	x
+x	x	x	x	x
+x	x	x	x	x
 ```
 
 ```
 Usage: python Main.py [options]
 
-  -inputMatrix:        The matrix file in text format.
+  -input:       The matrix file in text format.
 
   -delimiter:   The matrix file delimiter
                 (e.g. "\t" for tab, "," for comma).
@@ -29,7 +32,7 @@ Usage: python Main.py [options]
   -headers:     A comma delimited array of column headers to use for subsetting	
 			    (e.g. [chromosome,coordinate,sample1,sample3]).
 
-  -outputFile: 	The output file for the resulting subsetted matrix.
+  -output: 		The output file for the resulting subsetted matrix.
 ```
 
 Usage: python Main.py <matrix file> <array of column headers> <delimiter used in matrix file>
