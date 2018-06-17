@@ -1,11 +1,12 @@
 # Bioinformatics Tools
 
-- [Tools to manipulate genome matrices](# Tools to manipulate genome matrices)  
+- [Tools to manipulate genome matrices](#Tools to manipulate genome matrices)  
 	* [SubsetMatrix](#SubsetMatrix)  
 	* [ConsolidateMatrixToUniqueRows](#ConsolidateMatrixToUniqueRows)  
 	* [TransposeMatrix](#TransposeMatrix)  
 	* [MultiFastaFromMatrix](#MultiFastaFromMatrix)  
 	
+## Tools to manipulate genome matrices
 
 ### SubsetMatrix
 
