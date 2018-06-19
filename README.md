@@ -15,27 +15,24 @@ This subsets a matrix based on column header.
 My original purpose was for use in subsetting genome matrices which look like:
 
 ```
-chromosome	coordinate	sample1	sample2	sample3
-x	x	x	x	x
-x	x	x	x	x
-x	x	x	x	x
+Chromosome	Coordinate	sample1	sample2	sample3
 ```
 
 ```
 Usage: python Main.py [options]
 
-  -input:       The matrix file in text format.
+e.g. python Main.py -i inputFile.txt -d "/t" -c columnHeaders.txt -o subsettedMatrix.txt
 
-  -delimiter:   The matrix file delimiter
-                (e.g. "\t" for tab, "," for comma).
+  -inputFile, -i		The matrix file in text format.
+
+  -delimiter, -d		The matrix file delimiter
+                		(e.g. "\t" for tab, "," for comma).
 				
-  -headers:     A comma delimited array of column headers to use for subsetting	
-			    (e.g. [chromosome,coordinate,sample1,sample3]).
+  -columnHeader, -c		A text file with column headers to use for subsetting.
+						Single column, one header per line.
 
-  -output: 		The output file for the resulting subsetted matrix.
+  -outputFile, -o 		The output file for the resulting subsetted matrix.
 ```
-
-Usage: python Main.py <matrix file> <array of column headers> <delimiter used in matrix file>
 
 ### ConsolidateMatrixToUniqueRows
 
