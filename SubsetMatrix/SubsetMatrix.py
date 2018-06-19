@@ -34,9 +34,12 @@ class SubsetMatrix:
 		headerRow = headerRow.rstrip()
 		headerRowArray = headerRow.split(self.delimiter)
 		for headerValue in headerRowArray:
+			print(headerValue)
 			if headerValue in self.columnsToKeepDictionary:
+				print("in dictionary")
 				returnValue.append(True)
 			else:
+				print("NOT in dictionary")
 				returnValue.append(False)
 		return returnValue
 
