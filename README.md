@@ -18,10 +18,14 @@ My original purpose was for use in subsetting genome matrices which look like:
 Chromosome	Coordinate	sample1	sample2	sample3
 ```
 
+Running the program
+
+```sh
+python Main.py -i inputFile.txt -d "/t" -c columnHeaders.txt -o subsettedMatrix.txt
+```
+
 ```
 Usage: python Main.py [options]
-
-e.g. python Main.py -i inputFile.txt -d "/t" -c columnHeaders.txt -o subsettedMatrix.txt
 
   -inputFile, -i		The matrix file in text format.
 
