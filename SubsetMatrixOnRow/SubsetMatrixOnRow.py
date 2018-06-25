@@ -23,7 +23,7 @@ class SubsetMatrixOnRow:
 		
 		with open(self.inputFile) as inputFileHandle:
 			headerRow = inputFileHandle.readline()
-			columnBitArray = self.__getColumnBitArray(headerRow)
+			columnBitArray = self.__getReferenceColumnBitArray(headerRow)
 			# print(columnBitArray)
 			outputFileHandle.write(headerRow)
 			for line in inputFileHandle:
@@ -31,7 +31,7 @@ class SubsetMatrixOnRow:
 					outputFileHandle.write(line + "\n")
 		outputFileHandle.close
 		
-	def __getColumnBitArray(self, headerRow):
+	def __getReferenceColumnBitArray(self, headerRow):
 		returnValue = []
 		headerRow = headerRow.rstrip()
 		headerRowArray = headerRow.split(self.delimiter)
@@ -66,6 +66,6 @@ class SubsetMatrixOnRow:
 			if (cellValue == refValue) != columnBitArray[i]:
 				return False
 		return True
-		
+
 	 
 	
